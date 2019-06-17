@@ -1,5 +1,9 @@
-#multi-stage Dockerfile
+###############--------------##########-------------############-------------############------------------------###################
+#####       //====>   This Dockerfile is responsible for creating a Docker Image using this multi-stage Dockerfile      <====//#####                     
+###############--------------##########-------------############-------------############------------------------###################
 
+
+#multi-stage Dockerfile
 #Stage1
 
 #Pull the Base Image

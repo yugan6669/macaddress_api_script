@@ -9,7 +9,7 @@ LABEL "AUTHOR"="uganderdevops@gmail.com"
 #MAINTAINER Ugander Dabbara ugander.dabbara@hcl.com
 #Update the apt repository
 RUN apt-get update -y
-RUN adduser -m pyuser
+RUN useradd -m pyuser
 USER pyuser
 #Create the directory python3
 RUN mkdir -p /home/pyuser/python3

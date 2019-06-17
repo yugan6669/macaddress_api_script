@@ -1,3 +1,7 @@
+###############--------------##########-------------############-------------############------------------------###################
+#####  //====>       This script is responsible for crate Docker Image and Run the Containerized application          <====//  #####                     
+###############--------------##########-------------############-------------############------------------------###################
+
 #!/bin/bash
 #Scripting for docker image and docker container creation
 #While executing passing the API_KEY value at one-time and MacAddresses automatically detect from mac_addrs.txt file and display the output.

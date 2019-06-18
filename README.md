@@ -1,29 +1,31 @@
-# Project Title:       Fetching the data like Company Name for the Required MAC Addresses through hitting the REST API(https://macaddress.io)
-  --------------
-  
-  
+# Project Title:
+ ===================
+Fetching the data like Company Name for the Required MAC Addresses through hitting the REST API(https://macaddress.io)
  
- >  Details of used Language and Tools
+  
+ Details of used Language and Tools
+ ==================================
 
  | Programming Language | Scripting Language | Containerization_Tool | Created_By | Creation_Date |
  | --- | --- | --- | --- | --- |
  | python3 | shell scripting | docker | Ugander Dabbara | 2019-06-18 | 
  
  
-# Description: 
- ----------------
+Description: 
+=================
+
 
    Scripting a python code using (macaddress.io/api) (REST API database) and it should display output as in the database and then          dockerized.(Using mutli-satge Dockerfile and create the Docker Image and run the image and get proper output)
 
-# Pre-Requisites:
-  ---------------
+Pre-Requisites:
+=================
  - RESTAPI databse (https://macaddress.io/)                                                                                                 
  - Operating System (Linux)                                                                                                         
  - Install python3                                                                                                                         
  - Install docker
 
-# Process of Execution:
-  ---------------------
+Process of Execution:
+ ==========================
 - This script has two arguments i.e., argument1 is API_KEY and argument2 is MAC_ADDRESS.  
 
 - Generate the API_KEY from https://macaddress.io/ .

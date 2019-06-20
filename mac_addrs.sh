@@ -12,7 +12,7 @@
      read -p "Enter API Key: "  API_KEY
      echo -e "\n"
      if [ -z "$(cat mac_addrs.txt)" ]; then
-             echo  "$(cat README.md)"
+             echo  "please provide the mac address details for which the information to be fetched at mac_addrs.txt"
      else
          echo -e "Creation of Docker Image and running the container is in progress...\n"
          for MAC_ADDRESS in `cat mac_addrs.txt`;

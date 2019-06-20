@@ -40,7 +40,7 @@ Process of Execution:
 
 - Write the multli-stage dockerfile.  
 
-- Build the Image using Dockerfile and then Run the Image like i.e.,
+- Build the Image using Dockerfile and then Run the Image like i.e., (This step is optional, not the part of this execution process and   it is showing individually how to build   the Image and running the container , we can go for next step)
 
   ```
                 $ docker build -t <tagname> <path of dockerfile>
@@ -48,7 +48,7 @@ Process of Execution:
   
   ```
   
-- Create bash script **docker_script.sh** with the above two docker commands includes and establish security.
+- Create bash script **mac_addrs.sh** and execute.
 
 - Execute the bash script.
     - build the image

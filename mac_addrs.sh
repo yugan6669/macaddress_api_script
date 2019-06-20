@@ -5,10 +5,10 @@
 #!/bin/bash
 #Scripting for docker image and docker container creation
 #While executing passing the API_KEY value at one-time and MacAddresses automatically detect from mac_addrs.txt file and display the output.
-
-if [ 'sh mac_addrs.sh --help' ]; then
-  echo "$(cat README.md)"
-else  
+arg=``
+count-=0
+case $@ in
+$arg)
      echo " "
      echo "Execution Process: "
      echo  "\n"
@@ -25,4 +25,10 @@ else
               echo -e "\n \n "
             done
      fi
-fi
+;;
+*)
+   echo "$(cat README.md)"
+   ;;
+
+esac
+

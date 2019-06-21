@@ -20,10 +20,10 @@ def getData():
      json_obj = urllib.request.urlopen(url)
      reader = codecs.getreader("utf-8")
      data = json.load(reader(json_obj))
-  except IndexError:
-     print("Enter API_KEY and MAC_ADDRESS")
-  except Exception:
-     print("Enter valid API KEY and MAC Address")
+  except IndexError as e:
+ 
+  except Exception as e:
+     print("e")
   else:
      #Printing the data from api based database.
      print ("Below details are vendorDetails: ");

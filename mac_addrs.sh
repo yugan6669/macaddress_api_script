@@ -6,7 +6,7 @@
 #Scripting for docker image and docker container creation
 #While executing passing the API_KEY value at one-time and MacAddresses automatically detect from mac_addrs.txt file and display the output.
 arg=``
-count-=0
+coun=0
 case $@ in
 $arg)
      echo " "

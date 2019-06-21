@@ -1,5 +1,5 @@
 ###############--------------##########-------------############-------------############------------------------###################
-##### //====>   This Program is responsible to fetch data from REST API Database with the respective of macaddress      <====//#####                     
+##### //====>   This Program is responsible to fetch data from REST API Database with the respective of macaddress      <====//#####
 ###############--------------##########-------------############-------------############------------------------###################
 
 #/usr/bin/env/python3
@@ -20,19 +20,25 @@ def getData():
      json_obj = urllib.request.urlopen(url)
      reader = codecs.getreader("utf-8")
      data = json.load(reader(json_obj))
-  except IndexError as e:
- 
+     print('\n ')
+     print('\n ')
+  except IndexError as ie:
+     print("Please enter API_KEY and MAC_ADDRESS as arguments")
+   # print("ie");
   except Exception as e:
-     print("e")
+     print("Please enter valid API KEY and MAC Address")
+   # print("e")
   else:
      #Printing the data from api based database.
      print ("Below details are vendorDetails: ");
-     print ("company Name is: " +data['vendorDetails']['companyName']);
-     print ("comapany Address is: " +data['vendorDetails']['companyAddress']);
-     print ("countryCode is: " +data['vendorDetails']['countryCode']);
-     print ("oui is: " +data['vendorDetails']['oui']);
-     print ("MacAddress is: " +data['macAddressDetails']['searchTerm']);
+     print ("company Name is		: " +data['vendorDetails']['companyName']);
+     print ("comapany Address is	: " +data['vendorDetails']['companyAddress']);
+     print ("countryCode is		: " +data['vendorDetails']['countryCode']);
+     print ("oui is		    	: " +data['vendorDetails']['oui']);
+     print ("MacAddress is	    	: " +data['macAddressDetails']['searchTerm']);
 
 if __name__ == "__main__":
      getData()
+
+
 
